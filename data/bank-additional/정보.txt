@@ -1,0 +1,8 @@
+1) bank-additional-full.csv는 20개 변수, 모든 예(41188), 2008년 5월~2010년 11월
+2) bank-additional.csv는 1) 예의 랜덤으로 선택된 10%(4119), 20개 변수
+3) bank-full.csv는 모든 예, 17개 변수 (이 데이터셋의 오래된 버전)
+4) bank.csv는 3)예의 랜덤으로 선택된 10%, 17개 변수
+- 더 많은 연산적인 머신러닝 알고리즘 요구를 테스트하기 위해 제공된
+
+http://archive.ics.uci.edu/dataset/222/bank+marketing
+https://www.kaggle.com/datasets/henriqueyamahata/bank-marketing

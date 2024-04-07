@@ -1,0 +1,53 @@
+은행 다이렉트 마케팅
+
+포르투갈 뱅킹 회사의 휴대폰 전화 다이렉트 마케팅 캠페인과 연관됨
+보통 은행 정기 예금이 가입(안)된다면 고객에 접근하기 위해서 한번 이상의 연락이 요구 됨
+
+bank-full.csv는 2008년 5월부터 2010년 11월
+
+분류 목적은 고객이 정기 예금에 가입할 지 예측하는 것.
+
+45211 rows × 17 columns(연속형 변수 7개, 범주형 변수 9개)
+null값 없음
+
+1 - age (numeric, int64)
+2 - balance (numeric, int64) : 연(yearly) 평균 잔액, 유로화
+3 - day (numeric, int64) : 월 마지막 연락 일
+4 - duration (numeric, int64) : 마지막 연락 기간, 초 단위
+5 - campaign (numeric, int64) : 캠페인 동안에 수행된 연락 횟수
+
+6 - pdays (numeric, int64) : 이전 캠페인으로부터 고객이 마지막으로 연락된 후 지난 일수
+		   -1 값은 이전에 연락되지 않았던 고객임.
+7 - previous  (numeric, int64) : 이 캠페인 이전에 수행된 연락 횟수
+
+8 - month (명목): 12 개 : 마지막 연락 월
+9 - job (명목): 12 개의 직업(unknown 포함)
+10 - marital (명목): 3 개의 결혼 상태("divorced" means divorced or widowed)
+11 - education (순위?): 4 개의 카테고리(unknown 포함)
+12 - default (명목): 2 개의 카테고리 : 채무불이행에서 신용을 가지는 지. 98%가 no
+13 - housing (명목): 2 개의 카테고리 : 주택 대출이 있는 지
+14 - loan (명목): 2 개의 카테고리 : 개인 대출이 있는 지
+15 - contact (명목): 3 개의 연락 소통 유형(unknown 포함)
+16 - poutcome (명목): 4 개의 이전 마케팅 캠페인 결과(unknown 포함)
+
+17 - y: 종속 변수. 이진. no가 88%
+
+* 종속변수 불균형률 : 88:12
+
+* 표준 편차 큰 거: balance, duration, pdays
+마지막에 standardization?
+
+-> 우선 모두 robust로 진행
+
+*balance 마이너스 값 존재함(3766개) -> 어떻게 할 지
+
+*education은 범주형 - 순위가 있는 걸로 봐야할 지? -> 명목으로 보자
+
+*duration의 min 값이 0이다. 0인 거를 연락이라고 칠 수 있을까?
+- day, month 에 아마도 포함
+- 예를 들어, 10/15에 마지막 연락을 했다고 했을 때
+0초 했는데(duration)
+day는 15 일 것이며 months는 10으로  값이 들어갈 것이다.
+
+-> duration 변수 y에 큰 영향을 끼쳐서 삭제하기로 함
+
