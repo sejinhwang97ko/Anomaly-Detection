@@ -1,0 +1,32 @@
+변수 설명
+
+# 기본 정보
+1 - age : 연령
+2 - job : 직종 (categorical: 'admin.','blue-collar','entrepreneur','housemaid','management','retired','self-employed','services','student','technician','unemployed','unknown')
+3 - marital : 혼인여부(categorical: 'divorced', 'married', 'single', 'unknown'; note: 'divorced' means divorced or widowed)
+4 - education : 학력 (categorical: 'basic.4y','basic.6y','basic.9y','high.school','illiterate','professional.course','university.degree','unknown')
+5 - default : 채무불이행 유무 (categorical: 'no', 'yes', 'unknown')
+6 - housing : 주택 대출 유무 (categorical: 'no','yes','unknown')
+7 - loan: 개인 대출 유무 (categorical: 'no','yes','unknown')
+
+# 연재 캠페인의 마지막 연락과 관련된 것 (related with the last contact of the current campaign)
+8 - contact: 통신 유형 (categorical: 'cellular','telephone')
+9 - month: 마지막 연락 달 (categorical: 'jan', 'feb', 'mar', ..., 'nov', 'dec')
+10 - day_of_week: 마지막 연락 요일 (categorical: 'mon','tue','wed','thu','fri')
+11 - duration: 마지막 연락 통화 시간(초 단위) (numeric). (y에 큰 영향을 미침. 통화 수행 안되면 모름. 통화가 끝나면 y는 확정. 예측 모델 생성시 폐기해야 함. 벤치마크 목적으로만 사용.)
+
+# 다른 변수
+12 - campaign: 캠페인 동안 해당 고객을 위해 연락이 수행된 수(마지막 연락 포함)
+13 - pdays: 이전 캠페인에서 고객과 마지막으로 연락한 후 경과된 일 수(999는 이전에 연결한 적이 없다는 것을 의미)
+14 - previous: 캠페인 이전에 해당 고객과 연락한 수
+15 - poutcome: 이전 마케팅 캠페인의 결과 (categorical: 'failure','nonexistent','success')
+
+# 사회, 경제적 지표
+16 - emp.var.rate: 고용 변동률 - 분기별 지표 (numeric)
+17 - cons.price.idx: 소비자 물가 지수 - 월간 지표 (numeric)
+18 - cons.conf.idx: 소비자 신뢰 지수 - 월간 지표 (numeric)
+19 - euribor3m: euribor(유럽 내 기준금리) 3개월 rate - 일일 지표 (numeric)
+20 - nr.employed: 직원 수 - 분기별 지표 (numeric)
+
+출력변수 (desired target):
+21 - y - 고객이 정기예금에 가입했습니까? (binary: 'yes','no')
