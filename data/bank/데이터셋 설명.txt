@@ -23,7 +23,7 @@ null값 없음
 8 - month (명목): 12 개 : 마지막 연락 월
 9 - job (명목): 12 개의 직업(unknown 포함)
 10 - marital (명목): 3 개의 결혼 상태("divorced" means divorced or widowed)
-11 - education (순위?): 4 개의 카테고리(unknown 포함)
+11 - education (순서): 4 개의 카테고리(unknown 포함)
 12 - default (명목): 2 개의 카테고리 : 채무불이행에서 신용을 가지는 지. 98%가 no
 13 - housing (명목): 2 개의 카테고리 : 주택 대출이 있는 지
 14 - loan (명목): 2 개의 카테고리 : 개인 대출이 있는 지
