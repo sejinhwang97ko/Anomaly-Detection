@@ -45,5 +45,3 @@ null값 없음
 0초 했는데(duration)
 day는 15 일 것이며 months는 10으로  값이 들어갈 것이다.
 
--> duration 변수 y에 큰 영향을 끼쳐서 삭제하기로 함
-
