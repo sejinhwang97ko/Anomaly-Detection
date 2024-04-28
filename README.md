@@ -5,11 +5,11 @@
 
 
 
--지금까지 올린 파일들-(상단의 Go to file 초록 버튼 클릭)
+-지금까지 올린 파일들-(상단의 Go to file 초록 버튼 클릭)  
 
-## loan_projct 폴더   
+## Anomaly-Detection 폴더   
   
-* ### src  
+* ### data  
   
       * model_evaluate.ipynb = 코드 돌아가는 데 꼭 필요한 중심 파일  
   
