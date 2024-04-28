@@ -5,64 +5,30 @@
 
 
 
--지금까지 올린 파일들-(상단의 Go to file 초록 버튼 클릭)  
+-지금까지 올린 파일들-  
 
 ## Anomaly-Detection 폴더   
   
-* ### data  
+  > **data**  
   
-      * model_evaluate.ipynb = 코드 돌아가는 데 꼭 필요한 중심 파일  
+      * bank 폴더  = raw 데이터셋(bank-full.csv 로 EDA 및 preprocessing 진행)  
   
-      * eda.ipynb  
+      * bank-additional 폴더   
   
-      * preprocessing.ipynb  
+      * train_set.csv  = preprocessing 끝낸 train 데이터셋  
   
-      * XGB_XAI.ipynb   
+      * test_set.csv  = preprocessing 끝낸 test 데이터셋
+  
+      * preprocessing_modify.csv  = preprocessing 끝낸 전체 데이터셋(train 데이터셋 + test 데이터셋)  
 
-  > data  
-    
-      * Loan_Default.csv = 코드 돌아가는 데 꼭 필요한 세부 파일  
+  > **EDA**
+  
+      * BankMarketing_EDA.ipynb = bank-full.csv 로 EDA 진행, EDA 후 인사이트는 data - bank 폴더의 데이터셋 설명과 eda 후 인사이트.txt에 기입  
 
-  > **model**  
-
-      * lgb_model.ipynb = 코드 돌아가는 데 꼭 필요한 세부 파일  
-
-      * xgb_model.ipynb = 코드 돌아가는 데 꼭 필요한 세부 파일  
-
-      * cat_model.ipynb = 코드 돌아가는 데 꼭 필요한 세부 파일  
+  > **preprocessing**
   
-      * knn_model.ipynb = 코드 돌아가는 데 꼭 필요한 세부 파일  
-  
-      * dnn_model.ipynb = 코드 돌아가는 데 꼭 필요한 세부 파일  
-
-      * rf_model.ipynb = 코드 돌아가는 데 꼭 필요한 세부 파일  
-
-   > XAI  
-  
-      * xgb_xai.html  
-  
-      * model_XAI.html  
-  
-* ### note
-  
-      * cat_note.ipynb  
-  
-      * dnn_note.ipynb  
-  
-      * lgb_note.ipynb  
-  
-      * rf_note.ipynb  
-  
-      * xgb_note.ipynb  
-  
-      * knn_note.ipynb  
+      * Preprocessing_detail.ipynb = 전처리 상세한 과정  
       
-* ### graph  
-
-      * msno_before  
+      * Preprocessing_arrange.ipynb = Preprocessing_detail.ipynb 에서 코드 정리
       
-      * msno_after 
-
-      * roc_curve  
-
 
