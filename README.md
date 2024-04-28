@@ -23,12 +23,15 @@
 
   > **EDA**
   
-      * BankMarketing_EDA.ipynb = bank-full.csv 로 EDA 진행, EDA 후 인사이트는 data - bank 폴더의 데이터셋 설명과 eda 후 인사이트.txt에 기입  
+      * BankMarketing_EDA.ipynb = bank-full.csv 로 EDA 진행, EDA 후 인사이트는 data - bank 폴더의 "데이터셋 설명과 eda 후 인사이트.txt"에 기입  
 
   > **preprocessing**
   
       * Preprocessing_detail.ipynb = 전처리 상세한 과정  
       
-      * Preprocessing_arrange.ipynb = Preprocessing_detail.ipynb 에서 코드 정리
-      
+      * Preprocessing_arrange.ipynb = Preprocessing_detail.ipynb 에서 코드 정리  
+
+  > **model** = 이상탐지 알고리즘 적용  
+
+      * A1A_LOF_PW.ipynb = 밀도 기반 방법 LOF(Local Outlier Factor)
 
