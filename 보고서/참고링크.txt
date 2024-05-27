@@ -1,3 +1,0 @@
-https://www.kaggle.com/code/aliakay8/bank-marketing-end-to-end-ml-project
-https://scikit-learn.org/stable/modules/outlier_detection.html
-https://intothedata.com/02.scholar_category/anomaly_detection/
